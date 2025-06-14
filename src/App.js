@@ -1,10 +1,11 @@
 
 import './App.css';
+import State from './State/State';
 
 function App() {
   return (
     <>
-    <h1>Hi Anwar!</h1>
+    <State />
     </>
   );
 }
