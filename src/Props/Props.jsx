@@ -30,14 +30,30 @@
 // }
 
 // Using Destructuring
-const Props = ({ name, age, city }) => {
-  return (
-    <div>
-      <h1>Props Example</h1>
-      <h2>My name is {name}</h2>
-      <h3>My age is {age}</h3>
-      <h4>My city is {city}</h4>
-    </div>
-  );
+// const Props = ({ name, age, city }) => {
+//   return (
+//     <div>
+//       <h1>Props Example</h1>
+//       <h2>My name is {name}</h2>
+//       <h3>My age is {age}</h3>
+//       <h4>My city is {city}</h4>
+//     </div>
+//   );
+// }
+
+// Props pass through Object
+const Props =({users})=>{
+    console.log(users);
+    return(
+        <div>
+            <h1>User Detail</h1>
+            <h2>My name is {users.name}</h2>
+            <h3>My age is {users.age}</h3>
+            <h4>My city is {users.city}</h4>
+            
+
+        </div>
+    )
 }
+
 export default Props

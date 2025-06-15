@@ -1,10 +1,12 @@
 
 import './App.css';
 import Props from './Props/Props';
+import User from './Props/User';
 function App() {
+  
   return (
     <>
-   <Props name="Anwar" age="23" city="Kukkar hatta"/>
+   <User />
    
     </>
   );
