@@ -1,11 +1,11 @@
 
 import './App.css';
-import State from './State/State';
-
+import Props from './Props/Props';
 function App() {
   return (
     <>
-    <State />
+   <Props name="Anwar" age="23" city="Kukkar hatta"/>
+   
     </>
   );
 }
