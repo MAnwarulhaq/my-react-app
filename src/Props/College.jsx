@@ -9,6 +9,7 @@ const College = (props) => {
             <li key={index}>{college}</li>
             ))}
         </ul>
+        
     </div>
     
   )
