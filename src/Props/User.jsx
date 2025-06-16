@@ -2,6 +2,8 @@ import React, { use } from 'react'
 import Props from './Props'
 import College from './College'
 import StudentName from './StudentName'
+import UserData from './UserData'
+import Wraper from './Wraper'
 import { useState } from 'react'
 
 const User = () => {
@@ -21,6 +23,16 @@ const User = () => {
 
   return (
     <div>
+    <Wraper >
+      <h1>Hi! Anwar</h1>
+    </Wraper>
+     <Wraper >
+      <h1>Hi! Faizan</h1>
+    </Wraper>
+      
+      <UserData name="Anwar" />
+       <UserData  />
+      <hr />
       {/* <Props name="Anwar" age={25} city="Dhaka"/> */}
       <College name={collegeName} studentname={firstName} />
       {firstName && <StudentName studentname={firstName} />}
