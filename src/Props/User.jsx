@@ -23,10 +23,10 @@ const User = () => {
 
   return (
     <div>
-    <Wraper >
+    <Wraper color="red">
       <h1>Hi! Anwar</h1>
     </Wraper>
-     <Wraper >
+     <Wraper color="yellow" >
       <h1>Hi! Faizan</h1>
     </Wraper>
       

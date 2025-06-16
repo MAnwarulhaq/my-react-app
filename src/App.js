@@ -1,12 +1,11 @@
 
 import './App.css';
-import Props from './Props/Props';
-import User from './Props/User';
+import Inputfeild from './Input/Inputfeild';
 function App() {
   
   return (
     <>
-   <User />
+    <Inputfeild/>
    
     </>
   );
