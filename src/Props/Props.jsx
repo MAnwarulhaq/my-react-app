@@ -43,7 +43,7 @@
 
 // Props pass through Object
 const Props =({users})=>{
-    console.log(users);
+    
     return(
         <div>
             <h1>User Detail</h1>
