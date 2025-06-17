@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+
 import Props from './Props'
 import College from './College'
 import StudentName from './StudentName'

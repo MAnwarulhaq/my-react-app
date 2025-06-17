@@ -1,11 +1,11 @@
 
 import './App.css';
-import Inputfeild from './Input/Inputfeild';
+import ControlComponent from './ControlComponent/ControlComponent';
 function App() {
   
   return (
     <>
-    <Inputfeild/>
+    <ControlComponent/>
    
     </>
   );
