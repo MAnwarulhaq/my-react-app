@@ -1,11 +1,11 @@
 
 import './App.css';
-import ControlComponent from './ControlComponent/ControlComponent';
+import CheckBox from './HandleCheckBox/CheckBox';
 function App() {
   
   return (
     <>
-    <ControlComponent/>
+    <CheckBox />
    
     </>
   );
