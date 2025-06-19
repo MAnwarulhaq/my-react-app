@@ -1,11 +1,11 @@
 
 import './App.css';
-import CheckBox from './HandleCheckBox/CheckBox';
+import RadioandDropdown from './RadioandDropdownButton/RadioandDropdown';
 function App() {
   
   return (
     <>
-    <CheckBox />
+    <RadioandDropdown/>
    
     </>
   );
