@@ -1,11 +1,13 @@
 
 import './App.css';
-import RadioandDropdown from './RadioandDropdownButton/RadioandDropdown';
+import Map from './Loops/Map';
+import ReuseComponent from './Loops/ReuseComponent';
+
 function App() {
   
   return (
     <>
-    <RadioandDropdown/>
+    <ReuseComponent/>
    
     </>
   );
