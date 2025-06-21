@@ -1,14 +1,14 @@
 
 import './App.css';
 import Map from './Loops/Map';
-import ReuseComponent from './Loops/ReuseComponent';
+import Clock from './Props/Clock';
+import BgColor from './Props/BgColor';
 
 function App() {
   
   return (
     <>
-    <ReuseComponent/>
-   
+    <BgColor />
     </>
   );
 }
