@@ -1,14 +1,11 @@
 
 import './App.css';
-import Map from './Loops/Map';
-import Clock from './Props/Clock';
-import BgColor from './Props/BgColor';
-
+import NestedLoop from './Array/NestedLoop';
 function App() {
   
   return (
     <>
-    <BgColor />
+    <NestedLoop />
     </>
   );
 }
