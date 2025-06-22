@@ -1,11 +1,11 @@
 
 import './App.css';
-import NestedLoop from './Array/NestedLoop';
+import UseEffect from './Hooks/UseEffect';
 function App() {
   
   return (
     <>
-    <NestedLoop />
+      <UseEffect />
     </>
   );
 }
