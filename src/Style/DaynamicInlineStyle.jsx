@@ -25,7 +25,8 @@ const DaynamicInlineStyle = () => {
     return (
         <div>
             <h1 style={{ textAlign: "center", color: "green" }}>Dynamic and Conditional Inline Style</h1>
-            <button
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", }}>
+             <button
                 style={{
                     backgroundColor: "#4CAF50",    // green button
                     color: "white",
@@ -71,8 +72,10 @@ const DaynamicInlineStyle = () => {
                     transition: "background-color 0.3s ease"
                 }}
                 onClick={()=>setGrid(!grid)}>Toogle Grid</button>
+            </div>
+           
 
-            <div style={{ display: grid?"flex":"block", flexWrap: "wrap", width: "100%", backgroundColor: "orange" }}>
+            <div style={{ display: grid?"flex":"block", flexWrap: "wrap", width: "100%", backgroundColor: "orange",alignItems:"center",justifyContent:"center" }}>
                 
                 <div style={cardStyle}>
 
