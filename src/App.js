@@ -1,11 +1,11 @@
 
 import './App.css';
-import InlineStyle from './Style/InlineStyle';
+import DaynamicInlineStyle from './Style/DaynamicInlineStyle';
 function App() {
   
   return (
     <>
-      <InlineStyle />
+      <DaynamicInlineStyle />
     </>
   );
 }
