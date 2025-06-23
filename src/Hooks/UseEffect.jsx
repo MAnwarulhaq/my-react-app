@@ -7,9 +7,11 @@ const UseEffect = () => {
         console.log("This function is called only once");
     }
    // callOnce();
-//    React.useEffect(()=>{
-//         callOnce();
-//     },[count])
+
+   // only call once after the first render
+   React.useEffect(()=>{
+        callOnce();
+    },[])
    // only call on counter value change
     React.useEffect(()=>{
         callOnce();

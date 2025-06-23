@@ -1,11 +1,11 @@
 
 import './App.css';
-import UseEffect from './Hooks/UseEffect';
+import InlineStyle from './Style/InlineStyle';
 function App() {
   
   return (
     <>
-      <UseEffect />
+      <InlineStyle />
     </>
   );
 }
