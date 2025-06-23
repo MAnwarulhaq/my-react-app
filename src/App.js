@@ -1,11 +1,13 @@
 
 import './App.css';
-import DaynamicInlineStyle from './Style/DaynamicInlineStyle';
+import UserProfile from './Style/UserProfile';
+
+
 function App() {
   
   return (
     <>
-      <DaynamicInlineStyle />
+      <UserProfile />
     </>
   );
 }
