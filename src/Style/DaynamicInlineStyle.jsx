@@ -83,6 +83,7 @@ const DaynamicInlineStyle = () => {
                     <div>
                         <h1 style={{ color: { textStyle }, fontSize: "30px" }}>Anwar</h1>
                         <p style={{ color: { textStyle }, fontSize: "20px" }}>Software Developer.</p>
+                        
                     </div>
 
                 </div>

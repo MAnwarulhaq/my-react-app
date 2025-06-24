@@ -1,14 +1,15 @@
 
 import './App.css';
-import UserProfile from './Style/UserProfile';
+import StyleComponent from './StyleComponent/StyleComponent';
+
 
 
 function App() {
   
   return (
     <>
-    
-      <UserProfile />
+    <StyleComponent/>
+
     </>
   );
 }
