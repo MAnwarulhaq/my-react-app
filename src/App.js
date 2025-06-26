@@ -1,6 +1,6 @@
 
 import './App.css';
-import StyleComponent from './StyleComponent/StyleComponent';
+import UseRef from './Hooks/UseRef';
 
 
 
@@ -8,7 +8,7 @@ function App() {
   
   return (
     <>
-    <StyleComponent/>
+    <UseRef />
 
     </>
   );
