@@ -1,6 +1,6 @@
 
 import './App.css';
-import UseRef from './Hooks/UseRef';
+import UserParentComponent from './FuntionPassThroughProps/UserParentComponent';
 
 
 
@@ -8,7 +8,7 @@ function App() {
   
   return (
     <>
-    <UseRef />
+    <UserParentComponent />
 
     </>
   );
