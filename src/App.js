@@ -1,15 +1,14 @@
 
 import './App.css';
-import UseformStatus from './Hooks/UseformStatus';
-
+import UseTransition from './Hooks/useTransition';
 
 
 function App() {
   
   return (
     <>
-    <UseformStatus/>
-
+  <UseTransition/>
+    
     </>
   );
 }
