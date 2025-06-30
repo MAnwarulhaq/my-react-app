@@ -1,14 +1,12 @@
 
 import './App.css';
-import UseTransition from './Hooks/useTransition';
-
+import LiftingStateUp from './LiftingStateUp/LiftingStateUp';
 
 function App() {
   
   return (
     <>
-  <UseTransition/>
-    
+    <LiftingStateUp/>  
     </>
   );
 }
