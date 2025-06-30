@@ -1,12 +1,16 @@
 
-import './App.css';
-import LiftingStateUp from './LiftingStateUp/LiftingStateUp';
+import UpdatingArrayInState from './Array/UpdatingArrayInState';
+
+
+
 
 function App() {
   
   return (
     <>
-    <LiftingStateUp/>  
+
+    <UpdatingArrayInState/>
+
     </>
   );
 }
