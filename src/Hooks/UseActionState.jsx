@@ -7,10 +7,10 @@ const UseActionState = () => {
         await new Promise(res => setTimeout(res, 3000))
         console.log("Submited!", name, password)
         if (name && password) {
-            return { message: "Data Submited" }
+            return { message: "Data Submited",name,password }
         }
         else {
-            return { error: "Fill the data" }
+            return { error: "Fill the data",name,password }
         }
 
 
@@ -20,7 +20,7 @@ const UseActionState = () => {
 
 
     return (
-        <div style={{display:"flex",alignItems:"center",flexDirection:"column"}}>
+        <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
             <h1>UseActionState inn React </h1>
             <form action={action}>
                 <input type="text" placeholder='Enter your Name' name='name' />
@@ -28,9 +28,12 @@ const UseActionState = () => {
                 <input type="password" name="password" id="" placeholder='Enter Your Password' />
                 <br /><br />
                 <button disabled={pending}>Submit</button>
-                {data?.message && <p style={{ color: "green" }}>{data.message}</p>}
-                {data?.error && <p style={{ color: "red" }}>{data.error}</p>}
+
             </form>
+            {data?.message && <p style={{ color: "green" }}>{data.message}</p>}
+            {data?.error && <p style={{ color: "red" }}>{data.error}</p>}
+            <h3>Name:{data?.name}</h3>
+            <h3>Password:{data?.password}</h3>
         </div>
     )
 }
