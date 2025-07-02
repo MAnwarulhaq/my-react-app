@@ -1,6 +1,5 @@
 
-import UpdatingArrayInState from './Array/UpdatingArrayInState';
-
+import UseActionState from "./Hooks/UseActionState";
 
 
 
@@ -8,8 +7,10 @@ function App() {
   
   return (
     <>
+    <UseActionState/>
 
-    <UpdatingArrayInState/>
+
+
 
     </>
   );
