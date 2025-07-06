@@ -1,12 +1,11 @@
 
-import UseID from "./Hooks/UseID";
-
+import ContextApi from "./ContextApi/ContextApi";
 
 function App() {
   
   return (
     <>
-    <UseID/>
+    <ContextApi/>
 
 
 
