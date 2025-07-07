@@ -14,7 +14,7 @@ const ContextApi = () => {
             <option value="Islamiat">Islamiat</option>
           </select>
           <h1>Context Api</h1>
-          <button onClick={()=>setSubjectInfo("")}>Clear Subject</button>
+          <button onClick={()=> setSubjectInfo("")}>Clear Subject</button>
         <CollegeInfo/>
         </SubjectData.Provider>
     </div>

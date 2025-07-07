@@ -1,11 +1,11 @@
+import CustomHook from "./CustomHooks/CustomHook";
 
-import ContextApi from "./ContextApi/ContextApi";
 
 function App() {
   
   return (
     <>
-    <ContextApi/>
+    <CustomHook/>
 
 
 
