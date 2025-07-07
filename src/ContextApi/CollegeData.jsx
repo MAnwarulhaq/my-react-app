@@ -1,11 +1,5 @@
-import React from 'react'
+import { createContext } from "react";
 
-const CollegeData = () => {
-  return (
-    <div>
-        <h1>College Component</h1>
-    </div>
-  )
-}
+const SubjectData=createContext("English")
 
-export default CollegeData
+export { SubjectData };

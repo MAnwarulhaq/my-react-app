@@ -1,10 +1,10 @@
 import React from 'react'
-import CollegeData from './CollegeData'
+import CollegeInfo from './CollegeInfo'
 const ContextApi = () => {
   return (
     <div style={{backgroundColor:"orange", padding:"20px"}}>
-        <h1>Cotext Api</h1>
-        <CollegeData/>
+        <h1>Context Api</h1>
+        <CollegeInfo/>
     </div>
   )
 }
