@@ -5,14 +5,14 @@ import React, { useState } from 'react'
 const useToggle = (defaultval) => {
  const [value,setValue]=useState(defaultval)
 function toggleValue(val){
-  if(val!="bolean"){
+  if(typeof val!="boolean"){
     setValue(!value)
   }
   else{
     setValue(val)
   }
 }
-  return (value,toggleValue)
+  return [value,toggleValue]
 
 }
 
