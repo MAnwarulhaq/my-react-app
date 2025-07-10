@@ -4,7 +4,7 @@ import useToggle from "./useToggle"
 const CustomHook = () => {
     const [value,toggleValue]=useToggle(true)
     const [data,setData]=useToggle(true)
-    console.log(value)
+    // console.log(value)
   return (
     <div>
         <button onClick={toggleValue}>Toogle Heading</button>

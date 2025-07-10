@@ -1,12 +1,13 @@
-import CustomHook from "./CustomHooks/CustomHook";
+import FetchandDisplayData from "./APIinReact/FetchandDisplayData";
+// import CustomHook from "./CustomHooks/CustomHook";
 
 
 function App() {
   
   return (
     <>
-    <CustomHook/>
 
+    <FetchandDisplayData/>
 
 
 
