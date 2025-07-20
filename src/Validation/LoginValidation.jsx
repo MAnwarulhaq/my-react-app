@@ -15,11 +15,12 @@ const LoginValidation = () => {
         }
     }
      const handPassword = (e) => {
-        console.log(e.target.value);
-        if (e.target.value.length > 5) {
-            setPasswordError("Username must be at least 5 characters long");
+        let regex = /^[A-Z0-9]+$/i;
+        if (!regex.test(e.target.value)) {
+              setPasswordError("Password must contain at least one uppercase letter and one number");
+           
         } else {
-            setPassword("");
+           setPasswordError("");
         }
     }
   return (
@@ -27,9 +28,9 @@ const LoginValidation = () => {
         <h1>Login </h1>
         <input type="text" name="" id="" onChange={handleName}/>{nameError && <span style={{color: "red"}}>{nameError}</span>}
         <br /><br />
-        <input type="password" name="" id="" onChange={handPassword}/>
+        <input type="text" name="" id="" onChange={handPassword}/>{passwordError && <span style={{color: "red"}}>{passwordError}</span>}
         <br /><br />
-        <button disabled={nameError}>Login</button>
+        <button disabled={nameError || nameError}>Login</button>
     </div>
   )
 }
