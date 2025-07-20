@@ -2,20 +2,23 @@ import { useEffect, useState } from 'react'
 
 const FetchandDisplayData = () => {
     const [users, setUsers] = useState([])
+    const [loader, setLoader] = useState(false)
     const [page, setPage] = useState(1)
     const usersPerPage = 10
 
     useEffect(() => {
+        setLoader(true)
         getUsers()
     }, [])
 
     async function getUsers() {
-        const url = "https://dummyjson.com/users"
-        // const url = "http://localhost:3000/users"
+      
+        const url = "http://localhost:3000/users"
         const response = await fetch(url)
         const data = await response.json()
         console.log(data)
-        setUsers(data.users)
+        setUsers(data)
+        setLoader(false)
     }
 
     const startIndex = (page - 1) * usersPerPage
@@ -36,6 +39,7 @@ const FetchandDisplayData = () => {
 
     return (
         <div style={{ padding: '30px', fontFamily: 'Segoe UI, sans-serif' }}>
+            
             <h1 style={{ textAlign: 'center', marginBottom: '20px' }}>User Table</h1>
             <div style={{ overflowX: 'auto', borderRadius: '10px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
                 <table style={{
@@ -55,15 +59,16 @@ const FetchandDisplayData = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {
+                        { 
+                            !loader?
                             currentUsers.map((user, index) => (
                                 <tr key={user.id} style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : '#ffffff' }}>
                                     <td style={tdStyle}>{user.id}</td>
-                                    <td style={tdStyle}>{user.firstName} {user.lastName}</td>
+                                    <td style={tdStyle}>{user.name} {user.lastName}</td>
                                     <td style={tdStyle}>{user.email}</td>
                                     <td style={tdStyle}>{user.phone}</td>
                                 </tr>
-                            ))
+                            )): <h1>Data Loading</h1>
                         }
                     </tbody>
                 </table>
