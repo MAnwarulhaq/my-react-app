@@ -1,14 +1,17 @@
 
 
 // import CustomHook from "./CustomHooks/CustomHook";
-import UseActionState from "./Validation/UseActionState";
+
+
+import UseReducer from "./Hooks/UseReducer";
+
+
 function App() {
   
   return (
     <>
 
-      <UseActionState />
-
+      <UseReducer />
     </>
   );
 }
