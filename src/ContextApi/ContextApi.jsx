@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { createContext, useState } from 'react'
 import CollegeInfo from './CollegeInfo'
-import { SubjectData } from './CollegeData'
+// import { SubjectData } from './CollegeData'
+
+ export const  SubjectData = createContext()
 const ContextApi = () => {
   const [subjectInfo,setSubjectInfo]=useState("")
   return (

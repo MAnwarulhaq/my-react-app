@@ -1,6 +1,7 @@
 
 import React, { useContext } from 'react'
-import {SubjectData} from "./CollegeData"
+// import {SubjectData} from "./CollegeData"
+import { SubjectData } from './ContextApi'
 
 const Subject = () => {
     const subject=useContext(SubjectData)
