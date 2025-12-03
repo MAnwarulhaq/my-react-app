@@ -4,7 +4,7 @@ const UseMemo = () => {
   const [count, setCount] = React.useState(0)
   const [item, setItem] = React.useState(10)
 
-  // function dono mbutton p call ho rha h es ko rokny k liye useMemo use krty h
+  // function dono button p call ho rha h es ko rokny k liye useMemo use krty h
   // heavy calulation k liye use hota h
 
   //     function multiCount  (){
