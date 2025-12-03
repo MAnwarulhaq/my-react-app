@@ -1,17 +1,18 @@
 import React from 'react'
 import Child from './Child'
-import { useState } from 'react'
+import { useState,useCallback } from 'react'
 const Parent = () => {
-    const [count,setCount]=useState(0)
-    function handleCount (){
-      setCount(count+1)
-    }
+  const [count, setCount] = useState(0)
+  const handleClick = useCallback(() => {
+    console.log("Clicked!");
+  }, [])
+
   return (
     <div>
-        <Child/>
-        <h1>Parent Componet</h1>
-        <h2>Count : {count}</h2>
-        <button onClick={handleCount}>Increment</button>
+      <Child handleClick={handleClick}/>
+      <h1>Parent Componet</h1>
+      <h2>Count : {count}</h2>
+      <button onClick={()=>setCount(count+1)}>Increment</button>
 
     </div>
   )
