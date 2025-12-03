@@ -7,7 +7,7 @@ const LoginValidation = () => {
     const [passwordError, setPasswordError] = React.useState("");
 
     const handleName = (e) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         if (e.target.value.length > 5) {
             setNameError("Username must be at least 5 characters long");
         } else {
