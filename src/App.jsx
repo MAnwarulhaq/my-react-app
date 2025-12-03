@@ -5,6 +5,7 @@ import UpdatingArrayInState from "./Array/UpdatingArrayInState";
 import ContextApi from "./ContextApi/ContextApi";
 import UseRef from './Hooks/UseRef'
 import LoginValidation from "./Validation/LoginValidation";
+import UseMemo from "./Hooks/UseMemo";
 function App() {
   
   return (
@@ -13,8 +14,9 @@ function App() {
       {/* <Parent/> */}
       {/* <UpdatingArrayInState/> */}
       {/* <ContextApi/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
       {/* <LoginValidation/> */}
+      <UseMemo/>
 
       
     </>
