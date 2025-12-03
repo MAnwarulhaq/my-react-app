@@ -8,6 +8,7 @@ import LoginValidation from "./Validation/LoginValidation";
 import UseMemo from "./Hooks/UseMemo";
 // import Parent from "./Hooks/usecallback/Parent";
 import RadioandDropdown from "./RadioandDropdownButton/RadioandDropdown";
+import EnhancedProfile from "./HOC/EnhancedProfile";
 function App() {
   
   return (
@@ -16,11 +17,12 @@ function App() {
       {/* <Parent/> */}
       {/* <UpdatingArrayInState/> */}
       {/* <ContextApi/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
       {/* <LoginValidation/> */}
       {/* <UseMemo/> */}
       {/* <Parent/> */}
       {/* < RadioandDropdown /> */}
+      <EnhancedProfile name="Anwar"/>
 
       
     </>
