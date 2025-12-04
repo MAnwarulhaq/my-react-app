@@ -13,6 +13,13 @@ const Products = () => {
   return (
     <div>
       <h1>Products List</h1>
+      <ul>
+        {products.map((item)=>{
+          return(
+            <li key={item.id}>{item.title}</li>
+          )
+        })}
+      </ul>
     </div>
   )
 }

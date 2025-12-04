@@ -23,7 +23,7 @@ function App() {
       {/* <UseMemo/> */}
       {/* <Parent/> */}
       {/* < RadioandDropdown /> */}
-      {/* <EnhancedProfile name="Anwar"/> */}
+      <EnhancedProfile name="Anwar"/>
       <LazyLoading/>
 
       
