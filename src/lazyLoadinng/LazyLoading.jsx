@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Products from './Products'
-
+import React, { useState , lazy} from 'react'
+// import Products from './Products'
+const Products = lazy(()=> import ('./Products'))
 const LazyLoading = () => {
     // const [open,setOpen] = useState
   return (
