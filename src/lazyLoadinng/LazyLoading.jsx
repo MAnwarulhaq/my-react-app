@@ -5,7 +5,7 @@ const LazyLoading = () => {
     const [open,setOpen] = useState(false)
   return (
     <div>
-        <button>see products</button>
+        <button onClick={()=>setOpen(!open)}>see products</button>
         {
             open &&  <Products/> 
         }
