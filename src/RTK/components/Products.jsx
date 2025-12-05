@@ -1,11 +1,14 @@
 import React from 'react'
 import { useGetProductsQuery } from '../service/products'
 const Products = () => {
-    const {data: products} = useGetProductsQuery()
-    console.log(products)
-  return (
-    <div>Products</div>
-  )
+    const { data } = useGetProductsQuery()
+    console.log(data?.products)
+    return (
+        <div>
+            <h1>Products</h1>
+        </div>
+
+    )
 }
 
 export default Products

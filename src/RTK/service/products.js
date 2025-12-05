@@ -4,9 +4,12 @@ import { api } from "./createAPI";
     endpoints:(builder)=>({
         getProducts: builder.query({
             query : () => "/products"
-        })
+        }),
+          getProduct: builder.query({
+            query : (id) => `/products/${id}`
+        }),
     })
 })
 
 
-export const {useGetProductsQuery} =products
+export const {useGetProductsQuery,useGetProductQuery} =products
