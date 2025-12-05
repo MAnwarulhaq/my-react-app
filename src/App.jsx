@@ -5,7 +5,7 @@
 // import ContextApi from "./ContextApi/ContextApi";
 // import UseRef from './Hooks/UseRef'
 // import LoginValidation from "./Validation/LoginValidation";
-// import UseMemo from "./Hooks/UseMemo";
+import UseMemo from "./Hooks/UseMemo";
 // import Parent from "./Hooks/usecallback/Parent";
 // import RadioandDropdown from "./RadioandDropdownButton/RadioandDropdown";
 // import EnhancedProfile from "./HOC/EnhancedProfile";
@@ -20,11 +20,11 @@ function App() {
       {/* <ContextApi/> */}
       {/* <UseRef/> */}
       {/* <LoginValidation/> */}
-      {/* <UseMemo/> */}
+      <UseMemo/>
       {/* <Parent/> */}
       {/* < RadioandDropdown /> */}
       {/* <EnhancedProfile name="Anwar"/> */}
-      <LazyLoading/>
+      {/* <LazyLoading/> */}
 
       
     </>
