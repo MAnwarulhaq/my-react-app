@@ -18,16 +18,16 @@ const UseMemo = () => {
   // }
 
   // const result = multiCount()
-  const  multiCount =(count) =>{
+  const  multiCount =() =>{
     console.log("MultiCount called")
     let total = 0
     for (let i = 0; i < 1000000000; i++) {
       total += i
     }
-    return  total + count
+    return  total 
   }
 
-  const result =useMemo(()=>  multiCount(count),[count])
+  const result =useMemo(()=>  multiCount(),[])
 
   // setTotal(result)
   // const multiCount = React.useMemo(
