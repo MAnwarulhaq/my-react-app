@@ -15,6 +15,8 @@ const Parent = () => {
     setCount(prev => prev + 1);
   }, [])
 
+  // console.log(count,"count")
+
   return (
     <div>
       
