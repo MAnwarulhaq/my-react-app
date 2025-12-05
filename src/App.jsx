@@ -10,6 +10,7 @@ import Parent from "./Hooks/usecallback/Parent";
 // import RadioandDropdown from "./RadioandDropdownButton/RadioandDropdown";
 // import EnhancedProfile from "./HOC/EnhancedProfile";
 import LazyLoading from "./lazyLoadinng/LazyLoading";
+import Products from "./RTK/components/Products";
 function App() {
   
   return (
@@ -21,10 +22,11 @@ function App() {
       {/* <UseRef/> */}
       {/* <LoginValidation/> */}
       {/* <UseMemo/> */}
-      <Parent/>
+      {/* <Parent/> */}
       {/* < RadioandDropdown /> */}
       {/* <EnhancedProfile name="Anwar"/> */}
       {/* <LazyLoading/> */}
+      <Products/>
 
       
     </>
