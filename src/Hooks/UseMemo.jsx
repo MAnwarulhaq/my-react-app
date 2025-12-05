@@ -18,6 +18,7 @@ const UseMemo = () => {
   // }
 
   // const result = multiCount()
+
   const  multiCount =() =>{
     console.log("MultiCount called")
     let total = 0
