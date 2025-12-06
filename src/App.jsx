@@ -11,6 +11,7 @@ import Parent from "./Hooks/usecallback/Parent";
 // import EnhancedProfile from "./HOC/EnhancedProfile";
 import LazyLoading from "./lazyLoadinng/LazyLoading";
 import Products from "./RTK/components/Products";
+import AddProduct from "./RTK/components/AddProduct";
 function App() {
   
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* < RadioandDropdown /> */}
       {/* <EnhancedProfile name="Anwar"/> */}
       {/* <LazyLoading/> */}
-      <Products/>
+      {/* <Products/> */}
+      <AddProduct/>
 
       
     </>
