@@ -12,6 +12,7 @@ import Parent from "./Hooks/usecallback/Parent";
 import LazyLoading from "./lazyLoadinng/LazyLoading";
 import Products from "./RTK/components/Products";
 import AddProduct from "./RTK/components/AddProduct";
+import Getusers from "./axios/Getusers";
 function App() {
   
   return (
@@ -28,7 +29,9 @@ function App() {
       {/* <EnhancedProfile name="Anwar"/> */}
       {/* <LazyLoading/> */}
       {/* <Products/> */}
-      <AddProduct/>
+      {/* <AddProduct/> */}
+      <Getusers/>
+      
 
       
     </>
