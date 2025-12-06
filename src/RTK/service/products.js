@@ -8,8 +8,15 @@ import { api } from "./createAPI";
           getProduct: builder.query({
             query : (id) => `/products/${id}`
         }),
+          addProduct: builder.mutation({
+            query: (product)=>({
+                url:'/products',
+                method: "POSt",
+                body: product
+            })
+        }),
     })
 })
 
 
-export const {useGetProductsQuery,useGetProductQuery} =products
+export const {useGetProductsQuery,useGetProductQuery,useAddProductMutation} =products
