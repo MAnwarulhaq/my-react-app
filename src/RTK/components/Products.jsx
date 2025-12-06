@@ -1,7 +1,7 @@
 import React from 'react'
 import { useGetProductsQuery ,useGetProductQuery} from '../service/products'
 const Products = () => {
-    const id =10
+    const id ="ea8f"
     // get all products
     // const { data } = useGetProductsQuery()
     // console.log(data?.products)
